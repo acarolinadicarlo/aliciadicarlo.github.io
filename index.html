@@ -4,6 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alicia Di Carlo – CV Interactivo</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/847/847969.png" type="image/png">
+  <meta name="description" content="CV de Alicia Di Carlo – Comunicación y liderazgo en el sector público.">
+  <meta property="og:title" content="CV de Alicia Di Carlo" />
+  <meta property="og:description" content="Explora el perfil profesional de Alicia Di Carlo, especialista en comunicación institucional y proyectos gubernamentales." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aliciadicarlo.github.io" />
+  <meta property="og:image" content="https://aliciadicarlo.github.io/alicia.png" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
@@ -84,6 +91,35 @@
       transform: scale(1.03);
     }
 
+    .sticky-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--text);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      font-size: 14px;
+      border-radius: 100px;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      z-index: 1000;
+    }
+
+    .sticky-btn:hover {
+      background: var(--accent);
+    }
+
+    .print-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #eaeaea;
+      border: 1px solid var(--border-gray);
+      border-radius: 8px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
     main.cv-content {
       max-width: 900px;
       margin: 3rem auto;
@@ -141,26 +177,9 @@
       background: var(--light-gray);
       color: var(--accent);
     }
-
-    .sticky-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: var(--text);
-      color: white;
-      padding: 0.6rem 1.2rem;
-      font-size: 14px;
-      border-radius: 100px;
-      text-decoration: none;
-      box-shadow: var(--shadow);
-      z-index: 1000;
-    }
-
-    .sticky-btn:hover {
-      background: var(--accent);
-    }
   </style>
 </head>
+
 <body>
   <a href="cv-alicia.pdf" download class="sticky-btn">📄 Descargar CV</a>
 
