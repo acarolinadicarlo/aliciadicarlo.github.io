@@ -40,13 +40,20 @@
     }
 
     .headshot {
-      width: 120px;
-      height: 120px;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       object-fit: cover;
       border: 2px solid var(--border-gray);
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       box-shadow: var(--shadow);
+    }
+
+    @media screen and (max-width: 600px) {
+      .headshot {
+        width: 160px;
+        height: 160px;
+      }
     }
 
     h1 {
