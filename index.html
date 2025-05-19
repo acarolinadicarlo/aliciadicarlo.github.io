@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alicia Di Carlo – CV Interactivo</title>
-  <link rel="icon" href="alicia.png" type="image/png">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/847/847969.png" type="image/png">
   <meta name="description" content="CV de Alicia Di Carlo – Comunicación y liderazgo en el sector público.">
   <meta property="og:title" content="CV de Alicia Di Carlo" />
   <meta property="og:description" content="Explora el perfil profesional de Alicia Di Carlo, especialista en comunicación institucional y proyectos gubernamentales." />
@@ -18,6 +18,7 @@
       --primary: #ffffff;
       --text: #1a1a1a;
       --accent: #3c3c3c;
+      --highlight: #f3f0ff;
       --light-gray: #f9f9f9;
       --border-gray: #e5e5e5;
       --card-bg: #ffffff;
@@ -128,6 +129,16 @@
 
     section {
       margin-bottom: 3rem;
+      position: relative;
+    }
+
+    section:not(:last-of-type)::after {
+      content: '';
+      display: block;
+      margin: 2rem auto 0;
+      width: 40%;
+      height: 1px;
+      background: #eaeaea;
     }
 
     section h2 {
@@ -157,6 +168,27 @@
       margin-bottom: 1.5rem;
     }
 
+    .info-card.highlighted {
+      background: var(--highlight);
+      border-left: 4px solid #babae0;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .tag {
+      background: #eaeafd;
+      color: #3c3c3c;
+      font-size: 0.85rem;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+
     ul {
       padding-left: 1.2rem;
       margin: 0;
@@ -178,65 +210,6 @@
       color: var(--accent);
     }
   </style>
-  <style media="print">
-  .sticky-btn, .download-btn {
-    display: none !important;
-  }
-
-  body {
-    background: white !important;
-    -webkit-print-color-adjust: exact;
-  }
-
-  header.cv-header {
-    background: white !important;
-    border: none !important;
-    padding-bottom: 1rem !important;
-  }
-
-  .info-card {
-    box-shadow: none !important;
-  }
-</style>
-<style media="print">
-  /* Hide buttons during printing */
-  .sticky-btn, .download-btn {
-    display: none !important;
-  }
-
-  /* Remove background colors */
-  body, header.cv-header, footer.cv-footer {
-    background: white !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    border: none !important;
-  }
-
-  /* Prevent gradient bleed */
-  header.cv-header {
-    background: none !important;
-    padding-bottom: 1rem !important;
-  }
-
-  /* Remove box shadows */
-  .info-card {
-    box-shadow: none !important;
-    border: 1px solid #ccc;
-  }
-
-  /* Ensure proper scaling */
-  * {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-    color-adjust: exact;
-  }
-
-  /* Fix spacing */
-  .cv-content {
-    padding: 0 !important;
-  }
-</style>
-
 </head>
 
 <body>
