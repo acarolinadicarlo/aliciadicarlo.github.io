@@ -198,6 +198,44 @@
     box-shadow: none !important;
   }
 </style>
+<style media="print">
+  /* Hide buttons during printing */
+  .sticky-btn, .download-btn {
+    display: none !important;
+  }
+
+  /* Remove background colors */
+  body, header.cv-header, footer.cv-footer {
+    background: white !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* Prevent gradient bleed */
+  header.cv-header {
+    background: none !important;
+    padding-bottom: 1rem !important;
+  }
+
+  /* Remove box shadows */
+  .info-card {
+    box-shadow: none !important;
+    border: 1px solid #ccc;
+  }
+
+  /* Ensure proper scaling */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color-adjust: exact;
+  }
+
+  /* Fix spacing */
+  .cv-content {
+    padding: 0 !important;
+  }
+</style>
 
 </head>
 
