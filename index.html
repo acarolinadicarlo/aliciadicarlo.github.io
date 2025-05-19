@@ -388,5 +388,14 @@
       once: true
     });
   </script>
+  <script>
+  // Force AOS sections to render before printing
+  window.addEventListener('beforeprint', () => {
+    document.querySelectorAll('[data-aos]').forEach(el => {
+      el.classList.add('aos-animate');
+    });
+  });
+</script>
+
 </body>
 </html>
