@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alicia Di Carlo – CV Interactivo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ffffff;
+      --text: #1a1a1a;
+      --accent: #3c3c3c;
+      --light-gray: #f9f9f9;
+      --border-gray: #e5e5e5;
+      --card-bg: #ffffff;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      --hero-bg: linear-gradient(120deg, #F8F8F8, #EAEAFD);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: var(--primary);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header.cv-header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      background: var(--hero-bg);
+      border-bottom: 1px solid var(--border-gray);
+    }
+
+    .headshot {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--border-gray);
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow);
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin: 0.2rem 0;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: var(--accent);
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 1.2rem;
+      padding: 0.7rem 1.4rem;
+      background: var(--text);
+      color: var(--primary);
+      text-decoration: none;
+      border-radius: 100px;
+      font-weight: 500;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .download-btn:hover {
+      background: var(--accent);
+      transform: scale(1.03);
+    }
+
+    main.cv-content {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      position: relative;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    section h2::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 2px;
+      background-color: var(--accent);
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+    }
+
+    .info-card {
+      background: var(--card-bg);
+      padding: 1.2rem 1.5rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin: 0;
+    }
+
+    ul li {
+      margin-bottom: 0.6rem;
+    }
+
+    p {
+      margin: 0 0 1rem;
+    }
+
+    footer.cv-footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      background: var(--light-gray);
+      color: var(--accent);
+    }
+
+    .sticky-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--text);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      font-size: 14px;
+      border-radius: 100px;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+      z-index: 1000;
+    }
+
+    .sticky-btn:hover {
+      background: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <a href="cv-alicia.pdf" download class="sticky-btn">📄 Descargar CV</a>
+
+  <header class="cv-header" data-aos="fade-down">
+    <img src="https://www.canva.com/design/DAGn6z70ACM/xNo1KOQoHUywudpTyfGA8A/view?utm_content=DAGn6z70ACM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha57f309570" alt="Foto de Alicia Di Carlo" class="headshot" />
+    <h1>Alicia Di Carlo</h1>
+    <p class="subtitle">Líder en Comunicación y Proyectos | 10+ años de impacto público</p>
+    <a href="cv-alicia.pdf" download class="download-btn">Descargar PDF</a>
+  </header>
+
+  <main class="cv-content">
+    <section data-aos="fade-up">
+      <h2>Perfil Profesional</h2>
+      <div class="info-card">
+        <p>
+          Comunicadora social y estratega de proyectos con una sólida carrera en el sector público. Apasionada por el trabajo en equipo, la participación colaborativa y la mejora continua. Buscando una transición a roles de mayor impacto, flexibilidad y remuneración competitiva.
+        </p>
+      </div>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>Contacto</h2>
+      <div class="info-card">
+        <ul>
+          <li><strong>Teléfono:</strong> 809 979 4704</li>
+          <li><strong>Email:</strong> Acarolinadicarlo@gmail.com</li>
+          <li><strong>Ubicación:</strong> Santo Domingo, República Dominicana</li>
+        </ul>
+      </div>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>Experiencia Laboral</h2>
+      <div class="info-card">
+        <ul>
+          <li><strong>Coordinadora de Facilitación de Comercio</strong> – Proyecto Trade Safe (Ago 2024 – Actualidad)</li>
+          <li><strong>Consultora de Evaluación y Monitoreo</strong> – Proyecto Trade Safe (Sept 2023 – Jul 2024)
+            <ul>
+              <li>Evaluación de beneficiarios, estrategias de captación y análisis de percepción pública.</li>
+            </ul>
+          </li>
+          <li><strong>Encargada de Relaciones Públicas</strong> – MERCADOM (2016–2018, 2021–2023)
+            <ul>
+              <li>Liderazgo de personal, gestión de imagen institucional y manejo de crisis.</li>
+            </ul>
+          </li>
+          <li><strong>Coordinadora de Etiqueta y Protocolo</strong> – CAASD (2010–2016)</li>
+          <li><strong>Oficial de Servicio al Cliente</strong> – VIMENPAQ (Jun–Oct 2009)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>Educación</h2>
+      <div class="info-card">
+        <ul>
+          <li>Máster en Dirección de Proyectos – Universidad CUM LAUDE (En curso)</li>
+          <li>Licenciatura en Comunicación Social – PUCMM (2013)</li>
+          <li>Bachillerato – Colegio San Judas Tadeo (2007)</li>
+        </ul>
+        <p><strong>Pasantías:</strong> CICOM (2012), Noticias SIN (2011)</p>
+      </div>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>Cursos Complementarios</h2>
+      <div class="info-card">
+        <ul>
+          <li>Manejo de crisis laboral</li>
+          <li>Etiqueta y protocolo</li>
+          <li>Manejo de emociones</li>
+        </ul>
+      </div>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>Aptitudes Clave</h2>
+      <div class="info-card">
+        <ul>
+          <li>Facilitadora proactiva y orientada al logro</li>
+          <li>Excelentes relaciones humanas y liderazgo positivo</li>
+          <li>Manejo de personal y resolución de conflictos</li>
+          <li>Colaboración efectiva con múltiples equipos</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="cv-footer" data-aos="fade-in">
+    <p>&copy; 2025 Alicia Di Carlo — Diseñado para destacar.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700,
+      once: true
+    });
+  </script>
+</body>
+</html>
