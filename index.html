@@ -178,6 +178,27 @@
       color: var(--accent);
     }
   </style>
+  <style media="print">
+  .sticky-btn, .download-btn {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    -webkit-print-color-adjust: exact;
+  }
+
+  header.cv-header {
+    background: white !important;
+    border: none !important;
+    padding-bottom: 1rem !important;
+  }
+
+  .info-card {
+    box-shadow: none !important;
+  }
+</style>
+
 </head>
 
 <body>
