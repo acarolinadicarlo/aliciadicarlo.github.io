@@ -110,17 +110,6 @@
       background: var(--accent);
     }
 
-    .print-btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1.2rem;
-      background: #eaeaea;
-      border: 1px solid var(--border-gray);
-      border-radius: 8px;
-      font-size: 0.9rem;
-      cursor: pointer;
-    }
-
     main.cv-content {
       max-width: 900px;
       margin: 3rem auto;
@@ -208,6 +197,59 @@
       font-size: 0.9rem;
       background: var(--light-gray);
       color: var(--accent);
+    }
+
+    /* ✅ PRINT OVERRIDES */
+    @media print {
+      .sticky-btn, .download-btn {
+        display: none !important;
+      }
+
+      body {
+        background: white !important;
+        color: black !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      header.cv-header,
+      footer.cv-footer {
+        background: white !important;
+        color: black !important;
+        border: none !important;
+        box-shadow: none !important;
+      }
+
+      .info-card {
+        background: white !important;
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+      }
+
+      .info-card.highlighted {
+        background: white !important;
+        border-left: 3px solid #aaa !important;
+      }
+
+      .tag-list {
+        gap: 0.4rem;
+      }
+
+      .tag {
+        background: #ddd !important;
+        color: #000 !important;
+        border: none !important;
+      }
+
+      img[alt*=\"icon\"],
+      img[alt*=\"perfil\"],
+      img[alt*=\"contacto\"],
+      img[alt*=\"experiencia\"],
+      img[alt*=\"educación\"],
+      img[alt*=\"cursos\"],
+      img[alt*=\"aptitudes\"] {
+        display: none !important;
+      }
     }
   </style>
 </head>
@@ -301,7 +343,7 @@
   </div>
 </section>
 
-  </main>
+    </main>
 
   <footer class="cv-footer" data-aos="fade-in">
     <p>&copy; 2025 Alicia Di Carlo — Diseñado para destacar.</p>
